@@ -1,5 +1,7 @@
 const { app, BrowserWindow } = require("electron");
 
+const env = process.env.NODE_ENV || "development";
+
 function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
